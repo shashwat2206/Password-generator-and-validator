@@ -4,7 +4,7 @@ def password_check(passwd):
     val = True
     
     if len(passwd) < 6: 
-        print('length should be at least 6') 
+        print('The length of your should be at least 8 charecters long') 
         val = False
         
         
@@ -26,7 +26,7 @@ def password_check(passwd):
     if val: 
         return val 
 
-# Main method 
+
 def main(): 
 	passwd = input("Please enter your password here : ")
 	
@@ -35,6 +35,5 @@ def main():
 	else: 
 		print("Invalid Password !!") 
 		
-# Driver Code		 
 if __name__ == '__main__': 
 	main() 

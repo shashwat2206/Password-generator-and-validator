@@ -9,12 +9,9 @@ s6 = string.octdigits
 s7 = string.punctuation
 print ("Welcome to the password Generator")
 
-
-
 def password_checker():
     while True:
-
-        password_length = int(input(" Enter the the length of the password to be generated : "))
+        password_length = int(input(" Enter the the length of the charecters to be generated in the password : "))
         s = []
         s.extend(list(s1))
         s.extend(list(s2))
@@ -36,7 +33,7 @@ def password_checker():
         random.shuffle(s)
         ot_pass5 = "".join(s[0:password_length])
         random.shuffle(s)
-        print("The Secure Password generated is  : " , generated_password)
+        print("The Secure Password generated is  : " , generated_password )
         print("The few other secure password options are " , ot_pass1 , "||" , ot_pass2 , "||" , ot_pass3, "||" , ot_pass4 , "||" , ot_pass5 )
 if __name__ == "__main__":
     password_checker()

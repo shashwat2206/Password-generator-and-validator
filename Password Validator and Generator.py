@@ -7,11 +7,11 @@ s4 = string.digits
 s5 = string.hexdigits
 s6 = string.octdigits
 s7 = string.punctuation
-print ("Welcome to the password Generator")
+print ("Welcome!!")
 while True:
     check = int(input(" Enter 0 to Check the security of your password and 1 to Generate a new password : "))
     def password_checker():
-        password_length = int(input(" Enter the the length of the password to be generated : "))
+        password_length = int(input(" Enter the the length of the charecters to be generated in the password : "))
         s = []
         s.extend(list(s1))
         s.extend(list(s2))
@@ -68,7 +68,7 @@ while True:
             if (password_check(passwd)): 
                 print(" Your Password is Secure") 
             else: 
-                print("Your Password is not secure I") 
+                print("Your Password is not secure!!!") 
 
     if __name__ == '__main__': 
     
